@@ -18,11 +18,11 @@ for j in mc-optifine.jar lwjgl3/pojav-noglfw.jar lwjgl3/lwjgl-glfw-3.3.3.jar $(f
   (cd $N/alljar && unzip -qo ../../$j -x 'META-INF/*' 2>/dev/null || true)
 done
 (cd $N/alljar && rm -f ../all.jar && zip -qr ../all.jar .)
-python3 $P/gen-natives.py $N/all.jar $N $N/lwjgl.o $N/lwjgl_opengl.o $N/lwjgl_stb.o $JDK $N/lx_compat.o --libc=$P/deps/musl-nx-out/lib/libc.a
+python3 $P/gen-natives.py $N/all.jar $N $N/lwjgl.o $N/lwjgl_opengl.o $N/lwjgl_stb.o $N/openal.o $JDK $N/lx_compat.o --libc=$P/deps/musl-nx-out/lib/libc.a
 $M -c -O2 -fPIE $N/jni_stubs.S -o $N/jni_stubs.o
 $M -c -O2 -fPIE -w $N/dltab.c -o $N/dltab.o
 $M -c -O2 -fPIE $P/horizon/jside/lx_dl.c -o $N/lx_dl.o
-EXTRA_J_LIBS="$N/lx_dl.o $N/dltab.o $N/jni_stubs.o $N/lwjgl.o $N/lwjgl_opengl.o $N/lwjgl_stb.o $JDK" $P/prelink-j.sh build-a64/mc.o build-a64/j.o
+EXTRA_J_LIBS="$N/lx_dl.o $N/dltab.o $N/jni_stubs.o $N/lwjgl.o $N/lwjgl_opengl.o $N/lwjgl_stb.o $N/openal.o $JDK" $P/prelink-j.sh build-a64/mc.o build-a64/j.o
 cd $P/horizon/app && rm -f mc.elf mc.nro
 make NAME=mc TITLE="Minecraft" BUILD=build-mc GL=1 J_OBJ=$HOME/mc-switch/build-a64/j.o DEFINES='-DLX_ROOT=\"sdmc:/mc\"' \
   EXTRA_LDFLAGS="-Wl,-z,notext -Wl,--wrap=fatalThrow,--wrap=diagAbortWithResult" -j8 2>&1 | grep -E 'error|undefined|built'
