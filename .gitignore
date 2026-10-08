@@ -19,3 +19,4 @@ config/.lock
 *.log
 *.png
 jstack*.txt
+logs/
