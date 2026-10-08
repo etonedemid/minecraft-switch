@@ -24,6 +24,7 @@ $M -c -O2 -fPIE -w $N/dltab.c -o $N/dltab.o
 $M -c -O2 -fPIE $P/horizon/jside/lx_dl.c -o $N/lx_dl.o
 EXTRA_J_LIBS="$N/lx_dl.o $N/dltab.o $N/jni_stubs.o $N/lwjgl.o $N/lwjgl_opengl.o $N/lwjgl_stb.o $N/openal.o $JDK" $P/prelink-j.sh build-a64/mc.o build-a64/j.o
 cd $P/horizon/app && rm -f mc.elf mc.nro
+# libdrm_nouveau from ~/mesa-switch/libdrm_nouveau: devkitPro's shim plus a buffer cache (texture uploads)
 make NAME=mc TITLE="Minecraft" BUILD=build-mc GL=1 J_OBJ=$HOME/mc-switch/build-a64/j.o DEFINES='-DLX_ROOT=\"sdmc:/mc\"' \
-  EXTRA_LDFLAGS="-Wl,-z,notext -Wl,--wrap=fatalThrow,--wrap=diagAbortWithResult" -j8 2>&1 | grep -E 'error|undefined|built'
+  EXTRA_LDFLAGS="-Wl,-z,notext -Wl,--wrap=fatalThrow,--wrap=diagAbortWithResult -L$HOME/mesa-switch/libdrm_nouveau/lib" -j8 2>&1 | grep -E 'error|undefined|built'
 mv mc.nro mc.elf ~/mc-switch/ 2>/dev/null; ls -la ~/mc-switch/mc.nro
