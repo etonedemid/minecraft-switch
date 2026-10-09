@@ -15121,6 +15121,336 @@
    "allDeclaredMethods": true
   },
   {
+   "type": "com.mojang.authlib.Agent",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.AuthenticationService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.BaseAuthenticationService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.BaseUserAuthentication",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.GameProfile",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.GameProfileRepository",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.HttpAuthenticationService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.HttpUserAuthentication",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.ProfileLookupCallback",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.UserAuthentication",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.UserType",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.exceptions.AuthenticationException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.exceptions.AuthenticationUnavailableException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.exceptions.InvalidCredentialsException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.exceptions.UserMigratedException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.legacy.LegacyAuthenticationService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.legacy.LegacyMinecraftSessionService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.legacy.LegacyUserAuthentication",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.BaseMinecraftSessionService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.HttpMinecraftSessionService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.InsecureTextureException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.InsecureTextureException$MissingTextureException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.InsecureTextureException$OutdatedTextureException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.InsecureTextureException$WrongTextureOwnerException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.MinecraftProfileTexture",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.MinecraftProfileTexture$Type",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.minecraft.MinecraftSessionService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.properties.Property",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.properties.PropertyMap",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.properties.PropertyMap$Serializer",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.ProfileIncompleteException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.ProfileNotFoundException",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService$1",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService$GameProfileSerializer",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilGameProfileRepository",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.request.AuthenticationRequest",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.request.InvalidateRequest",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.request.JoinMinecraftServerRequest",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.request.RefreshRequest",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.request.ValidateRequest",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.AuthenticationResponse",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.HasJoinedMinecraftServerResponse",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.MinecraftProfilePropertiesResponse",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.MinecraftTexturesPayload",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.ProfileSearchResultsResponse",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.ProfileSearchResultsResponse$Serializer",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.RefreshResponse",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.Response",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.authlib.yggdrasil.response.User",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.util.QueueLogAppender",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
+   "type": "com.mojang.util.UUIDTypeAdapter",
+   "allDeclaredConstructors": true,
+   "allDeclaredFields": true,
+   "allDeclaredMethods": true
+  },
+  {
    "type": "cp",
    "allDeclaredConstructors": true,
    "allDeclaredFields": true,

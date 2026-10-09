@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""gen-config.py JAR OUTDIR - reflection metadata for every class in the game jar: all declared constructors (entities,
+"""gen-config.py JAR... OUTDIR - reflection metadata for every class in the given jars (the game, and authlib, whose
+Mojang API requests and responses Gson builds reflectively: online servers): all declared constructors (entities,
 tile entities, packets and GUI screens are instantiated reflectively, and a tracing run only meets the ones it happened
 to spawn), plus all declared fields and methods for OptiFine's Reflector, which probes vanilla members by name."""
 import json, os, sys, zipfile
 
-jar, out = sys.argv[1], sys.argv[2]
-names = sorted(n[:-6].replace('/', '.') for n in zipfile.ZipFile(jar).namelist()
-               if n.endswith('.class') and not n.startswith('META-INF/') and n != 'module-info.class')
+jars, out = sys.argv[1:-1], sys.argv[-1]
+names = sorted({n[:-6].replace('/', '.') for jar in jars for n in zipfile.ZipFile(jar).namelist()
+                if n.endswith('.class') and not n.startswith('META-INF/') and n != 'module-info.class'})
 refl = [{'type': n, 'allDeclaredConstructors': True, 'allDeclaredFields': True, 'allDeclaredMethods': True} for n in names]
 os.makedirs(out, exist_ok=True)
 # every asset and root resource: a tracing run only embeds what it happened to load (unseen mobs came out purple/black)
