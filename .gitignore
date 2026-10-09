@@ -18,5 +18,6 @@ config/.lock
 *.elf
 *.log
 *.png
+!icon.jpeg
 jstack*.txt
 logs/
